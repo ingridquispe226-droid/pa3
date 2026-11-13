@@ -1,0 +1,340 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#principal{
+    width:100%;
+    height: 100vh;
+    background-image: url(imagen/fondo.jpg);
+    opacity: 0.9; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;  
+}
+#centro{
+    width:70%;
+    font-size: 30px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    text-align: center;
+    padding: 20px;
+    color:rgb(192, 90, 175); /*color de barra de titulo*/
+}
+#centro p{
+    text-align: center;
+    font-size: 23px;
+    font-weight: 900;
+    color: black;
+}
+#menu,#menu2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} 
+li{
+    list-style-type: none;
+    padding:10px;
+}
+#menu a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(107, 44, 126);
+}
+#menu a:hover{
+    color: rgb(221, 186, 215);;
+    transform: translateY(-4px);
+}
+#iconos{
+    text-align: center;  
+    margin-top: 50px;
+    
+}
+#iconos i{
+    margin: 10px;
+    font-size: 20px;
+    /*color de cada icono*/
+    color: rgb(107, 44, 126);
+    border-radius: 50%;
+    /* borde de iconos red social*/
+    border: 1px solid rgb(107, 44, 126);
+    
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+#iconos i:hover{
+    background-color:rgb(221, 186, 215);
+
+}
+/*contacto*/
+#seccion-contacto{
+    padding: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+    display: grid;
+    grid-template-areas:                 
+                        "izq der"
+                        "inf inf";
+    gap: 5px;
+    grid-template-columns:  1fr  1fr;
+}
+.contactos{
+    width: 90%;
+    grid-area: izq;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.contactos th{
+    background-color: black;
+    color: white;
+    padding: 10px;
+
+}
+.contactos td{ 
+    border: 1px solid wheat;
+    padding: 10px;
+    text-align: center;
+}
+.img-contacto img{
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right:auto ;
+    height: auto;
+    display: block;
+    border: 3px solid black;
+}
+
+
+/*formulario*/
+
+.formulario fieldset{  
+    border: none; 
+    grid-area: der;  
+}
+.formulario input,textarea{
+    width: 90%;
+    margin-top: 5px;
+   
+}
+.formulario label{
+    margin-top: 8px;
+    margin-bottom: 4px;
+    font-weight: bold;
+
+}
+.formulario input{
+    width: 90%;
+    padding: 3px;
+}
+.boton input{
+    width: 90%;
+    padding: 8px;
+    background-color: gray;
+    font-weight: bold;
+    color: white;
+}
+.mapa th{
+    background-color: black;
+    color: white;
+    padding: 6px 15px;
+    height: auto;
+}
+.mapa{
+    grid-area: inf;   
+}
+
+/* estilo para el blog*/
+#contenedor{
+    width:75%;
+    margin:auto;
+    border:1px solid white;
+}
+#cabecera{   
+    margin:0 10px;
+    position:fixed;
+    width:70%;
+    height: 100px;
+    background-image: url(imagen/fondo.jpg);
+    z-index:100;
+}
+header{
+    text-align: center;
+    font-size: 50px;
+    margin:10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(192, 90, 175);
+}
+section{
+margin-top: 200px;
+}
+#parte-uno p{
+    text-align:justify;
+    margin: 20px;
+}
+#parte-uno img{
+    display: block;
+    margin:  0 auto;
+    width: 80%;
+    height: auto;
+}
+#parte-dos p{
+    text-align: justify;
+    margin: 20px;
+}
+#parte-dos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+}
+#parte-dos img{
+    width: 20%;
+    display: block;
+    margin:auto;
+}
+#parte-tres{
+    text-align: justify;
+    margin: 20px;
+}
+#menu2 a{
+    text-decoration: none;
+}
+
+#grid{
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;  
+    
+}
+/*estilos de galeria*/
+#galeria{
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content:center;
+  gap: 30px;
+  padding: 30px 10px;
+  max-width: 1200px;
+  margin: auto;
+}
+#galeria img{
+    display: flex;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 5px 8px 8px; 
+}
+
+#galeria p{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: Georgia , serif;
+    font-style: italic;
+    color:rgb(107, 44, 126);
+    font-size: 15px;
+    text-align: center; 
+}
+/*nosotros*/
+#grid-container{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+                        "sup  sup"                 
+                        "izq der"
+                        "inf inf";
+    gap: 5px;
+    grid-template-columns:  3fr  1fr;
+}
+.header{
+    background-color:gray;
+    padding: 9px;
+    color: white;
+    grid-area: sup;
+    text-align: center;
+}
+.subti{
+    border: 1px solid black;
+    text-align: center;     
+}
+.col1{
+    text-align: center;
+    padding: 20px;
+    column-count: 2;
+    column-gap: 2em;
+    column-rule: 1px solid lightgray;
+    text-align: justify;
+}
+
+.col1 img{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right:auto ;
+}
+
+.publicidad{
+    border: 1px solid black;
+    grid-area: der;
+    text-align: center;
+}
+.publicidad img{
+    width: 90%;
+}
+.footer{
+    background-color:gray;
+    padding: 9px;
+    color: white;
+    grid-area: inf;
+    text-align: center;
+}
+
+/*estilo video*/
+#misvideos{
+    border:1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+#misvideos p{
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+#youtube{    
+    width:100%;  
+    max-width: 760px;  
+    display: flex;
+    justify-content:center ;
+    padding-bottom: 56.25%;
+    position: relative;     
+}
+iframe{
+    width:100%;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px black;
+    position:absolute;
+}
+
+
+
+
